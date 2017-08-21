@@ -9,8 +9,27 @@ function sth(p1,p2){
 
 }
 alert(something(2,3,sth));
+
 //or
+
 var store=something(2,3,function(p1,p2){
     return p1^p2;
 })
 alert(store)
+
+//defining function within another function
+
+var globalFun=function(){
+    var localFun=function(){
+        alert("Hey i am local");
+    }
+    alert("Hey i am global")
+    localFun();
+}
+globalFun();
+
+//working with string objects
+
+var strObj="I am string an object";
+alert("Letter i is found at index "+strObj.indexOf("i"))
+alert(strObj.indexOf("a",3));  //alerts -1 if the letter is not found
