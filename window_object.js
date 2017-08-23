@@ -25,7 +25,7 @@ var choose=function(){
 }
 choose();
 //location object is used to get and set a url in our code
-if(confirm("you wanna go to bett.com?"))
+if(confirm("you wanna go to betty.com?"))
 {
 location="http://www.betty.com";
 }
